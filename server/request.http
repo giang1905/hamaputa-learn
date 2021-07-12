@@ -1,0 +1,53 @@
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "user": "dat",
+    "pass": 123,
+    "makpp": 0,
+    "tenkpp": "Đạt",
+    "macum": 0,
+    "tencum": "",
+    "mavung": 0,
+    "tenvung": "",
+    "vunggop": 0,
+    "tenvunggop": "",
+    "role": "hso",
+    "randoom": 0,
+    "role2": "",
+    "danhxung": "Ông",
+    "tenuser": "Giang"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "user": "acb",
+    "pass": 123
+}
+
+###
+
+POST http://localhost:5000/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGViYjY3NDkxZDUxYzE2NjcyYjdjYjYiLCJpYXQiOjE2MjYwNjEwODEsImV4cCI6MTYyNjA2NDY4MX0.w8sTfNlWofev3SNxV8bMRhrJgw3-6cAoSFaqhhmOw2w
+
+
+{
+    "title": "PHP",
+    "description": "Javascript",
+    "url": "php.com",
+    "status": "TO LEARN"
+}
+
+###
+GET http://localhost:5000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGU2Yzc2MzQxOTM5ZDBjYzNjMDI2NDUiLCJpYXQiOjE2MjU5MzE2MzAsImV4cCI6MTYyNTkzNTIzMH0.thcMPcbZ2FHkaquzyoZu1vbwICDwnPiYB-BduiTkFgg
+
+
+###
+
+GET http://localhost:5000/user
